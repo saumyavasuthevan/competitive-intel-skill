@@ -9,11 +9,11 @@ Automated competitive intelligence reports for Product Managers
 
 #### Set Up
 Upon installation, the wizard will interactively ask for:
-Target Company - The company to analyze
-Recipient Email - Where to send reports
-Sender Gmail - Which Gmail account sends the reports
-Schedule - Weekly, daily, or custom
-Timezone - Your local timezone
+* **Target Company** - The company to analyze
+* **Recipient Email** - Where to send reports
+* **Sender Gmail** - Which Gmail account sends the reports
+* **Schedule** - Weekly, daily, or custom
+* **Timezone** - Your local timezone
 
 #### Installation
 git clone https://github.com/saumyavasuthevan/competitive-intel-skill.git \
