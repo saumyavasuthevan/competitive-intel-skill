@@ -1,5 +1,5 @@
-# competitive-intel-skill
-Automated competitive intelligence reports for Product Managers
+# OpenClaw competitive-intel-skill
+Automated competitive intelligence reports for Product Managers via OpenClaw 
 
 #### What's Included
 - Automated competitive research via Brave Search
