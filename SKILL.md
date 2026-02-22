@@ -136,7 +136,7 @@ Subject: Competitive Intel: [Target Company Name] | [Current Date]
 <p><strong>Why it matters:</strong> [Insightful analysis, 1-2 sentences] (<em>Source: <a href='EXACT_URL'>Publication Name</a></em>)</p>
 
 <hr style='border:none;border-top:1px solid #ddd;margin:30px 0;'>
-<p style='font-size:12px;color:#666;'>This email was created by OpenClaw. Enjoyed this newsletter? Email <a href='mailto:saumyavasuthevan@gmail.com'>saumyavasuthevan@gmail.com</a> for more automated Product Manager workflows.</p>
+<p style='font-size:12px;color:#666;'>This email was created by OpenClaw. Enjoyed this newsletter? Email <a href='mailto:[recipient email]'>[recipient email]</a> for more automated Product Manager workflows.</p>
 
 </body></html>
 ```
@@ -166,15 +166,15 @@ HTMLEOF
 
 # Send with --body-html flag
 gog gmail send \
-  --to saumyavasuthevan@gmail.com \
-  --from saumyahowiai@gmail.com \
+  --to [receipient email] \
+  --from [sender email] \
   --subject "Competitive Intel: [Company] | [Date]" \
   --body-html "$(cat /tmp/report.html)"
 ```
 
 **Important:** 
-- Use `--from saumyahowiai@gmail.com` (sender)
-- Use `--to saumyavasuthevan@gmail.com` (recipient)
+- Use `--from [sender email]` (sender)
+- Use `--to [receipient email]` (recipient)
 - Use `--body-html` (NOT --body or --body-file) for HTML formatting
 - Confirm successful send before completing
 
@@ -207,7 +207,7 @@ Follow this tone and structure exactly:
 <p><strong>Why it matters:</strong> This is a direct play for our enterprise base. We should pivot our messaging from "Cost-Leader" to "Value/High-Uptime" to avoid a race to the bottom. (<em>Source: <a href='https://www.reuters.com/...'>Reuters</a></em>)</p>
 
 <hr style='border:none;border-top:1px solid #ddd;margin:30px 0;'>
-<p style='font-size:12px;color:#666;'>This email was created by OpenClaw. Enjoyed this newsletter? Email <a href='mailto:saumyavasuthevan@gmail.com'>saumyavasuthevan@gmail.com</a> for more automated Product Manager workflows.</p>
+<p style='font-size:12px;color:#666;'>This email was created by OpenClaw. Enjoyed this newsletter? Email <a href='mailto:[recipient email]'>[recipient email]</a> for more automated Product Manager workflows.</p>
 
 </body></html>
 ```
@@ -218,7 +218,7 @@ Follow this tone and structure exactly:
 - If fewer than 5 competitors found: Expand search with broader terms
 - **If no news from past 7 days for a competitor:** Skip that competitor and find another one with recent news (expand to 14 days max if needed)
 - If Gmail send fails: Save report to file and inform user of failure
-- If gog is not authenticated: Prompt user to run `gog auth add saumyahowiai@gmail.com --services gmail`
+- If gog is not authenticated: Prompt user to run `gog auth add [sender email] --services gmail`
 
 ## Time Constraint Policy
 
